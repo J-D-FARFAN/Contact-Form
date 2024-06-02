@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Karla;
+    src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+.error{
+    border: 1px solid hsl(0, 66%, 54%) !important;
+}
+
+.errorType{
+    font-size: 12px;
+    color: hsl(0, 66%, 54%);
+    font-weight: 700;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(148, 38%, 91%);
+
+    label{
+        position: relative;
+        display: block;
+        width: fit-content;
+        margin-bottom: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: hsl(187, 24%, 22%);
+        &::before{
+            content: "*";
+            position: absolute;
+            right: -12px;
+            color: hsl(169, 82%, 34%);
+        }
+    }
+
+    input[type="text"], input[type="email"]{
+        width: 100%;
+        height: 35px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid hsl(186, 15%, 59%);
+        text-indent: 1rem;
+        margin-bottom: 4px;
+        &:hover{
+            border-color: hsl(169, 80%, 38%);
+        }
+    }
+    input[type="checkbox"]{
+        accent-color: hsl(169, 82%, 27%);
+    }
+    input[type="submit"]{
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        outline: none;
+        background-color: hsl(169, 82%, 27%);
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .content__all__form{
+        width: 580px;
+        height: fit-content;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 24px;
+
+        .title--form{
+            font-size: 24px;
+            font-weight: bold;
+            color: hsl(187, 24%, 22%);
+        }
+
+        .section__Usuary{
+            width: 100%;
+            display: flex;
+            gap: .7rem;
+            margin: 2rem 0 1.2rem 0;
+            .contentInput{width: 100%;}
+        }
+        .content--EmailAndress{margin-bottom: 1.2rem;}
+        .content__queryType{
+            width: 100%;
+            .content--selected{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                gap: .7rem;
+                .boxQuery{
+                    border: 1px solid hsl(186, 15%, 59%);
+                    width: 100%;
+                    padding: 12px 1.2rem;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    text-indent: .6rem;
+                    margin-bottom: 1.2rem;
+                    input[type="radio"]{
+                        width: 17px;
+                        height: 17px;
+                        accent-color: hsl(169, 82%, 27%);
+                    }
+                    .txtQuery{font-size: 15px;}
+                }
+            }
+        }
+        .contentMessageC{
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            #sectionTextarea{
+                width: 100%;
+                height: 90px;
+                resize: none;
+                border-radius: 8px;
+                outline: none;
+                padding: 1rem;
+                border: 1px solid hsl(186, 15%, 59%);
+            }
+        }
+        .contenConsent{
+            text-indent: 1rem;
+            margin-bottom: 2rem;
+            .consent{
+                width: fit-content;
+                display: flex;
+                position: relative;
+                margin-bottom: 8px;
+                &::before{
+                    content: "*";
+                    position: absolute;
+                    right: -12px;
+                    color: hsl(169, 82%, 34%);
+                }
+            }
+        }
+    }
+
+    .contentMessage__submit{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 2rem;
+        width: fit-content;
+        height: fit-content;
+        background-color: hsl(187, 24%, 22%);
+        padding: 1.5rem;
+        border-radius: 12px;
+        .titleSent{
+            display: flex;
+            align-items: center;
+            text-indent: 10px;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+        .txt{
+            color: hsl(148, 38%, 91%);
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .content__all__form{
+        width: 100%;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 468px){
+    .section__Usuary{
+        display: block !important;
+    }
+    .content--selected{
+        display: block !important;
+    }
+    .consent{font-size: 13px !important;}
+    .txtQuery{font-size: 14.5px !important;}
+
+}

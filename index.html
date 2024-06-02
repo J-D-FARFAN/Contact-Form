@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <form class="content__all__form">
+    <span class="title--form">Contact Us</span>
+    <section class="section__Usuary">
+      <div class="contentInput">
+        <label class="FristName">First Name</label>
+        <input type="text" class="inputUs">
+        <span class="errorType"></span>
+      </div>
+      <div class="contentInput">
+        <label class="LastName">Last Name</label>
+        <input type="text" class="inputUs">
+        <span class="errorType"></span>
+      </div>
+    </section>
+    <div class="content--EmailAndress">
+      <label class="LastName">Email Address</label>
+      <input type="email" class="inputUs">
+      <span class="errorType"></span>
+    </div>
+    <section class="content__queryType">
+      <label class="ttQueryType">Query Type</label>
+      <section class="content--selected">
+        <div class="boxQuery">
+          <input type="radio" name="query">
+          <span class="txtQuery">General Enquiry</span>
+        </div>
+        <div class="boxQuery">
+          <input type="radio" name="query">
+          <span class="txtQuery">Support Request</span>
+        </div>
+      </section>
+      <span class="errorType"></span>
+    </section>
+    <section class="contentMessageC">
+      <label class="textareaTTMM">Message</label>
+      <textarea id="sectionTextarea" class="inputUs"></textarea>
+      <span class="errorType"></span>
+      
+    </section>
+    <section class="contenConsent">
+      <span class="consent"><input type="checkbox" class="checkConsent"> I consent to being contacted by the team</span>
+      <span class="errorType"></span>
+    </section>
+    <input type="submit" value="Submit" class="InputSubmit">
+  </form>
+
+  <section class="contentMessage__submit">
+    <span class="titleSent"><img src="assets/images/icon-success-check.svg" alt="" class="iconCheck">Message Sent!</span>
+    <p class="txt">Thanks for completing the form. We'll be in touch soon!</p>
+  </section>
+  
+<!--  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>
